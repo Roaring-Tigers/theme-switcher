@@ -40,8 +40,8 @@ const Hello = () => {
        }
 
     return(
-        <div>
-              <div style={{
+        <div className="hello">
+              <div className="hello-below" style={{
                     color: theme.color,
                     backgroundColor: theme.backgroundColor,
                     border: theme.border             
@@ -53,12 +53,12 @@ const Hello = () => {
                             <li>Node</li>
                             <li>Express</li>
                      </ol>
-              </div>
-              {/* <button onClick={darkMode}> Dark Theme </button>
-              <button onClick={lightMode}> Light Theme </button> */}
-
-      <button onClick={switchTheme}> {currentTheme=="lightMode"?"Switch to Dark Mode": "Switch to Light Mode"} </button>
+                     <button onClick={switchTheme}> {currentTheme=="lightMode"?"Switch to Dark Mode": "Switch to Light Mode"} </button>
         </div>
+              </div>
+              
+
+      
     )
 }
 
